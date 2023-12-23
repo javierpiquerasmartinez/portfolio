@@ -101,9 +101,8 @@ body {
 
 .jp-card{
     display: grid;
-    height: 100%;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr auto auto auto 2fr;
+    grid-template-rows: 50px auto auto auto 100px;
     grid-template-areas:
     ". ."
     ". intro"
@@ -123,10 +122,24 @@ body {
 
 .jp-name{
     grid-area: name;
+}
+
+.jp-h1{
     font-size: 80px;
     color: var(--dark)
 }
 
 .jp-description{
     grid-area: slogan;
+}
+
+.jp-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.jp-article{
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    box-shadow:  5px 5px black;
 }
